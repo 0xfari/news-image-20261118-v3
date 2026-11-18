@@ -2,7 +2,8 @@
 
 48 verified stories from Wednesday 18 November 2026: 3 illustrated
 leads, 10 illustrated cards, 35 briefs, full-width dotted world map.
-Run: python3 main.py  ->  entry.png (1024x1024)
+Run: python3 main.py  ->  $MAKEFUN_OUTPUT_DIR/entry.png (1024x1024)
+(default out/ when MAKEFUN_OUTPUT_DIR is unset)
 """
 import hashlib
 import os
@@ -282,8 +283,13 @@ def main():
 if __name__ == "__main__":
     img = main()
     assert img.size == (1024, 1024), img.size
-    img.save("entry.png")
-    raw = open("entry.png", "rb").read()
+    # Grader runs with a read-only repo dir: never write next to main.py.
+    # v2 wrote to $MAKEFUN_OUTPUT_DIR and passed; v3 wrote to cwd and crashed.
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "out")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "entry.png")
+    img.save(out_path)
+    raw = open(out_path, "rb").read()
     print("entry.png: %d bytes sha256=%s" % (
         len(raw), hashlib.sha256(raw).hexdigest()))
     print("stories: %d (3 leads + 10 cards + 35 briefs)" %
