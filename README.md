@@ -1,7 +1,8 @@
 # Wednesday 18 November 2026 — The Day in World News
 
-![rank](https://make.fun/api/badge/news-image-20261118/0xfari/news-image-20261118-v3/rank.svg)
-![reward](https://make.fun/api/badge/news-image-20261118/0xfari/news-image-20261118-v3/reward.svg)
+[![make.fun · news-image-20261118](https://make.fun/badge/news-image-20261118.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![rank](https://make.fun/badge/news-image-20261118/0xfari/news-image-20261118-v3/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![reward](https://make.fun/badge/news-image-20261118/0xfari/news-image-20261118-v3/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
 A single 1024×1024 front page summing up Wednesday 18 November 2026:
 **48 verified stories from 6 continents** — 3 illustrated leads, 10
